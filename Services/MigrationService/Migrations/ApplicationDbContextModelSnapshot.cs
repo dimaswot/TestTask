@@ -31,8 +31,8 @@ namespace MigrationService.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("character varying(10)");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<decimal>("Rate")
                         .HasColumnType("numeric(18,6)");
@@ -74,7 +74,7 @@ namespace MigrationService.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("CurrencyName")
-                        .HasColumnType("character varying(10)");
+                        .HasColumnType("character varying(50)");
 
                     b.HasKey("UserId", "CurrencyName");
 

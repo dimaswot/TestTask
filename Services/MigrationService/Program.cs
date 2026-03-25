@@ -37,3 +37,4 @@ public class Program
             Environment.ExitCode = 1;
         }
     }
+}

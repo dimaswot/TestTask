@@ -17,7 +17,7 @@ namespace MigrationService.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "character varying(10)", maxLength: 10, nullable: false),
+                    Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     Rate = table.Column<decimal>(type: "numeric(18,6)", nullable: false)
                 },
                 constraints: table =>
@@ -45,7 +45,7 @@ namespace MigrationService.Migrations
                 columns: table => new
                 {
                     UserId = table.Column<int>(type: "integer", nullable: false),
-                    CurrencyName = table.Column<string>(type: "character varying(10)", nullable: false)
+                    CurrencyName = table.Column<string>(type: "character varying(50)", nullable: false)
                 },
                 constraints: table =>
                 {

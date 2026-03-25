@@ -31,7 +31,7 @@ namespace MigrationService.Data
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(10);
+                    .HasMaxLength(50);
 
                 entity.Property(e => e.Rate)
                     .IsRequired()
