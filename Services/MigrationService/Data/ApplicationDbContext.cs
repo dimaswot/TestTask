@@ -13,8 +13,7 @@ namespace MigrationService.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-       : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Currency> Currency => Set<Currency>();
         public DbSet<User> User => Set<User>();
