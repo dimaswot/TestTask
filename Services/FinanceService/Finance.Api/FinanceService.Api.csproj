@@ -7,17 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Finance.Application">
-      <HintPath>..\Finance.Application\obj\Debug\Finance.Application.dll</HintPath>
-    </Reference>
-    <Reference Include="Finance.Infrastructure">
-      <HintPath>..\Finance.Infrastructure\obj\Debug\Finance.Infrastructure.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\FinanceService.Application\FinanceService.Application.csproj" />
+    <ProjectReference Include="..\FinanceService.Infrastructure\FinanceService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
