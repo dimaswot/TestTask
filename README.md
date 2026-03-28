@@ -41,9 +41,12 @@ Finance Api:
 - /api/Favorites/{currencyName}(ADD) - добавить избранную валюту юзеру
 - /api/Favorites/{currencyName}(DELETE) - удалить избранную валюту юзеру
 
-Написан на .NET 8
-БД: PGSQL
-Аутентификация: JWT
-CQRS: Mediatr
+Разработаны unit-тесты для UserService и FinanceSerivce 
+
+
+Написан на .NET 8, 
+БД: PGSQL, 
+Аутентификация: JWT, 
+CQRS: Mediatr, 
 хеширование: BCrypr
 
