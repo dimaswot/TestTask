@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceService.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceService.Application", "Services\FinanceService\FinanceService.Application\FinanceService.Application.csproj", "{691E7CFB-8E49-4DED-B41C-ADE3B9419850}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{AD4A113F-6F0F-4FCD-8039-E95514C61A05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{C08E0783-C0CD-4822-9412-F264C3ED51DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,10 @@ Global
 		{691E7CFB-8E49-4DED-B41C-ADE3B9419850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{691E7CFB-8E49-4DED-B41C-ADE3B9419850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{691E7CFB-8E49-4DED-B41C-ADE3B9419850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08E0783-C0CD-4822-9412-F264C3ED51DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08E0783-C0CD-4822-9412-F264C3ED51DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08E0783-C0CD-4822-9412-F264C3ED51DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08E0783-C0CD-4822-9412-F264C3ED51DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +114,7 @@ Global
 		{60E17051-BA3B-49F9-BEEC-43A41D82C932} = {B5CAD764-5D1B-4A84-9ED4-CD030183537A}
 		{B1E75C11-6EA3-4329-977A-AAB9814DAC7D} = {B5CAD764-5D1B-4A84-9ED4-CD030183537A}
 		{691E7CFB-8E49-4DED-B41C-ADE3B9419850} = {B5CAD764-5D1B-4A84-9ED4-CD030183537A}
+		{C08E0783-C0CD-4822-9412-F264C3ED51DF} = {AD4A113F-6F0F-4FCD-8039-E95514C61A05}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E66D1FF-FF88-4B67-8E6E-305513582168}

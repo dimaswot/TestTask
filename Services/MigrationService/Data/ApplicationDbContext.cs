@@ -71,6 +71,14 @@ namespace MigrationService.Data
                     .HasPrincipalKey(c => c.Name)
                     .OnDelete(DeleteBehavior.Cascade);
             });
+
+            // Table Test
+            modelBuilder.Entity<Test>(entity =>
+            {
+                entity.HasKey(e => new { e.TestId });
+
+                entity.ToTable("Test");
+            });
         }
     }
 }
