@@ -49,4 +49,14 @@ Finance Api:
 Аутентификация: JWT, 
 CQRS: Mediatr, 
 хеширование: BCrypr
+##################################################################################333
+ДЛЯ ЗАПУСКА:
+В папке TestTask:
+1. dotnet run --project Services/UserService/UserService.Api --urls="http://localhost:8080"
+2. dotnet run --project Services/FinanceService/Finance.Api --urls="http://localhost:8081"
+3. dotnet run --project ApiGateway --urls="http://localhost:5000"
+
+Обращения по API:
+localhost:5000/finance/currency/rates
+localhost:5000/user/auth/login 
 
